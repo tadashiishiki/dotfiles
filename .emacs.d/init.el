@@ -9,6 +9,16 @@
 
 (add-to-load-path "elisp" "conf" "public_repos")
 
+(require 'package)
+
+(add-to-list
+ 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
+
+(add-to-list
+ 'package-archives '("melpa" . "https://melpa.org/packages/"))
+
+(package-initialize)
+
 (add-to-list 'backup-directory-alist
 	     (cons "." "~/.emacs.d/backups/"))
 
@@ -24,5 +34,6 @@
 
 ;from conf
 (load "editor-setting")
+
 
 

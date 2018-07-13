@@ -5,7 +5,7 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
-(add-to-list 'load-path "/usr/local/share/emacs/site-lisp/slime/slime")
+	
 
 (require 'slime-autoloads)
 
